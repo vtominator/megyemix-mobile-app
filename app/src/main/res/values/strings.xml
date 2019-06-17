@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MegyeMix</string>
+
+    <string name="sign_up">Regisztráció</string>
+    <string name="log_in">Bejelentkezés</string>
+
+    <string name="surname">Vezetéknév</string>
+    <string name="forename">Keresztnév</string>
+    <string name="email">E-mail</string>
+    <string name="password">Jelszó</string>
+    <string name="password_again">Jelszó újra</string>
+    <string name="forget_password">Elfelejtette jelszavát?</string>
+    <string name="jump_to_signup">Nincs még fiókod? Regisztrálj!</string>
+    <string name="jump_to_login">Van már fiókod? Jelentkezz be</string>
+    <string name="privacy_policy">Elfogadom az Általános szerződési feltételeket és az Adatvédelmi szabályzatot</string>
+</resources>
