@@ -3,7 +3,7 @@ package com.rebornsolutions.megyemix;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -30,31 +30,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         transparentStatusAndNavigationBar();
-        boldAppNameStyle();
         startAnimation();
         buttonListeners();
     }
 
-    // Áttetszővé teszi a navigációsmenü, illetve a statusbar hátterét: [styles.xml]
+    // Áttetszővé teszi a navigációsmenü, illetve a statusbar hátterét
     private void transparentStatusAndNavigationBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
-    }
-
-    // Az applikáció nevében szereplő "Mix" szót teszi félkövérré
-    private void boldAppNameStyle() {
-        SpannableStringBuilder str = new SpannableStringBuilder(getResources().getString(R.string.app_name));
-        str.setSpan(new android.text.style.StyleSpan(
-                        android.graphics.Typeface.BOLD),
-                APP_NAME_START_INDEX,
-                APP_NAME_END_INDEX,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-        TextView tvAppName;
-        tvAppName = findViewById(R.id.tvAppName);
-        tvAppName.setText(str);
     }
 
     // Splash screen animáció

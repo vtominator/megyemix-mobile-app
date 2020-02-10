@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">MegyeMix</string>
+    <string name="map_key" translatable="false">AIzaSyA6iRttIG4VEd62du80TB_KA3X9FOXg40Q</string>
 
     <string name="sign_up">Regisztráció</string>
     <string name="log_in">Bejelentkezés</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="home">Kezdőlap</string>
+    <string name="facebook">Facebook</string>
 
     <string name="surname">Vezetéknév</string>
     <string name="forename">Keresztnév</string>
@@ -13,4 +17,70 @@
     <string name="jump_to_signup">Nincs még fiókod? Regisztrálj!</string>
     <string name="jump_to_login">Van már fiókod? Jelentkezz be</string>
     <string name="privacy_policy">Elfogadom az Általános szerződési feltételeket és az Adatvédelmi szabályzatot</string>
+    <string name="choose_favorite_team">Válaszd ki a kedvenc csapatod</string>
+
+    <string name="points">pt</string>
+    <string name="welcome_back">Üdv újra</string>
+    <string name="weekly_challange">Heti küldetésed</string>
+    <string name="tip_game">Tippjáték</string>
+    <string name="missions">Küldetések</string>
+    <string name="next_matches">Következő mérkőzések</string>
+    <string name="table">Tabella</string>
+    <string name="profile">Profil</string>
+
+    <string name="megyemix">Megyemix</string>
+    <string name="teams">Csapatok</string>
+    <string name="actual">Aktuális</string>
+    <string name="former">Korábbi</string>
+
+    <string name="all_tips">Összes tipp: </string>
+    <string name="correct_tip">Találat: </string>
+    <string name="incorrect_tip">Elhibázott tipp: </string>
+    <string name="all_completed_missions">Összes teljesített küldetés: </string>
+    <string name="all_matches">Mérkőzések: </string>
+    <string name="wins">Győzelem: </string>
+    <string name="draws">Döntetlen: </string>
+    <string name="loses">Vereség: </string>
+    <string name="goals_for">L. Gólok: </string>
+    <string name="goals_against">K. Gólok: </string>
+    <string name="goal_difference">Gól Kül.:</string>
+    <string name="position">Helyezés</string>
+    <string name="registration_date">Regisztráció</string>
+    <string name="hit_rate">Találati arány</string>
+    <string name="favorite_team">Kedvenc csapat</string>
+
+    <string name="profile_all_tips">Tippelt játék</string>
+    <string name="profile_missions">Küldetés</string>
+    <string name="profile_correct_tips">Helyes tipp</string>
+    <string name="profile_all_points">Elért pontszám</string>
+    <string name="location">Helyszín</string>
+    <string name="date">Időpont</string>
+    <string name="tipgame_dialog">Tippeld meg a mérkőzés kimenetelét!</string>
+    <string name="save">Mentés</string>
+    <string name="tipgame_string">A tipped a mérkőzés kezdetéig a TIPPEK fülön módosíthatod</string>
+
+    <string-array name="round">
+        <item>1. forduló</item>
+        <item>2. forduló</item>
+        <item>3. forduló</item>
+        <item>4. forduló</item>
+        <item>5. forduló</item>
+        <item>6. forduló</item>
+        <item>7. forduló</item>
+        <item>8. forduló</item>
+        <item>9. forduló</item>
+        <item>10. forduló</item>
+    </string-array>
+    <string-array name="teamClass">
+        <item>I. osztály</item>
+        <item>II. osztály</item>
+        <item>III. osztály</item>
+    </string-array>
+    <string-array name="teamName">
+        <item>Gödöllői SK III.</item>
+        <item>Főnix ISE-Gödöllő</item>
+        <item>Bagi TC \'96</item>
+    </string-array>
+
+
 </resources>

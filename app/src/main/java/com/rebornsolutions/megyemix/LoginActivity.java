@@ -2,7 +2,10 @@ package com.rebornsolutions.megyemix;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -13,6 +16,9 @@ import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import static com.rebornsolutions.megyemix.MainActivity.APP_NAME_END_INDEX;
@@ -27,23 +33,22 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // TODO: Jelszóemlékeztető bekötése
-
-        boldAppNameStyle();
+        // TODO: Facebook-gomb bekötése
+        loginButton();
         jumpToSignUp();
+
+
     }
 
-
-    private void boldAppNameStyle() {
-        SpannableStringBuilder str = new SpannableStringBuilder(getResources().getString(R.string.app_name));
-        str.setSpan(new android.text.style.StyleSpan(
-                        android.graphics.Typeface.BOLD),
-                APP_NAME_START_INDEX,
-                APP_NAME_END_INDEX,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-        TextView tvAppName;
-        tvAppName = findViewById(R.id.tvAppName);
-        tvAppName.setText(str);
+    private void loginButton() {
+        Button bLogIn = findViewById(R.id.bLogIn);
+        bLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContext, HomeActivity.class));
+                finish();
+            }
+        });
     }
 
     // A regisztrációs oldalhoz vezető gomb
@@ -64,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         str.setSpan(clickableSpan, START_INDEX, END_INDEX, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         str.setSpan(new UnderlineSpan(), START_INDEX, END_INDEX, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         str.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD), START_INDEX, END_INDEX, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        str.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.red)), START_INDEX, END_INDEX, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        str.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.green)), START_INDEX, END_INDEX, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
 
         TextView tvJumpToSignUp = findViewById(R.id.tvJumpToSignUp);

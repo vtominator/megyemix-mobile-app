@@ -4,14 +4,17 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="red">#920A0C</color>
+    <color name="green">#749434</color>
     <color name="dark">#262626</color>
     <color name="light">#656664</color>
     <color name="purple">#57455B</color>
 
-    <color name="background_grey">#CC262626</color>
+    <color name="background_gray">#CC262626</color>
+    <color name="foreground_gray">#80EBEBEB</color>
 
     <color name="white">#ffffff</color>
+    <color name="light_gray">#EBEBEB</color>
     <color name="black">#000000</color>
     <color name="transparent">#1fff</color>
+    <color name="facebook_blue">#3C58B6</color>
 </resources>
